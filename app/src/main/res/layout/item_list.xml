@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:padding="1dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:paddingBottom="1dp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@+id/ibMessage"
+            android:layout_toLeftOf="@+id/ibMessage"
+            android:padding="1dp"
+            android:text="Manish"
+            android:textColor="#04010B"
+            android:textSize="16dp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtname"
+            android:layout_toStartOf="@+id/ibMessage"
+            android:layout_toLeftOf="@+id/ibMessage"
+            android:text="+919039250820"
+            android:textColor="#666567"
+            android:id="@+id/txtNumber"/>
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/ibMessage"
+            android:src="@drawable/ic_call"
+            android:id="@+id/ibcall"
+            />
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/ibcall"
+            android:layout_toStartOf="@+id/ibcall"
+            android:src="@drawable/ic_message"
+            android:id="@+id/ibMessage"
+            />
+    </RelativeLayout>
+
+</LinearLayout>
